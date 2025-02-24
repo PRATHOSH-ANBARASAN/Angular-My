@@ -9,7 +9,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './page.component.css'
 })
 export class PageComponent {
-
- 
-
+  
 }

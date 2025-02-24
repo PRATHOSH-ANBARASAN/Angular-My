@@ -9,7 +9,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './product-card.component.css'
 })
 export class ProductCardComponent {
-
   @Input () product:any;
-
 }

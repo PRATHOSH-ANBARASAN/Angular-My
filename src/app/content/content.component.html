@@ -14,18 +14,12 @@
                 <div class="d-flex flex-column justify-content-center mt-3 mt-md-0">
                     <button type="button" class="btn btn-success fw-semibold" >Drop Information</button>
                 </div>
-
             </div>
         </div>
     </div>
 
-
     <!-- Data list in api -->
-
     <h5 class=" fw-bolder text-center py-5">Click the <span class="text-success">Course Button</span></h5>
-
-
-
     <div class="container">
         <section>
             <div class="card py-3 rounded-5" [ngClass]="['card-sideshow']">
@@ -33,7 +27,6 @@
                     @for (item of CourseButton; track $index) {
                         <button [class]="selectCourse == item?'btn btn-success fw-semibold p-1':'btn btn-outline-success fw-semibold p-1'" (click)="filterCategory(item)" type="button">{{item}}</button>
                     }
-                
                 </div>
             </div>
             <h6 class="mt-4 text-center small">We provide <span class="text-success">Learn Opportunity...!</span></h6>
@@ -46,6 +39,4 @@
             </div>
         </section>
     </div>
-
-
 </div>
