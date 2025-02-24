@@ -1,0 +1,13 @@
+.home-style{
+    background-color: rgba(222, 184, 135, 0.429);
+
+}
+
+.popup{
+    position: fixed;
+    top: 5px;
+    padding: 1% 2% 0% 2%;
+    
+
+    z-index: 1000;
+}

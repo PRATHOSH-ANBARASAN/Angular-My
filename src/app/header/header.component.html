@@ -1,0 +1,63 @@
+<nav class="position-fixed h-100 w-100 d-lg-none z-3  {{issidebar?'d-flex justify-content-between':'d-none'}} " >
+    <div class="d-flex flex-column justify-content-around align-items-center w-100 shadow-lg shadow-lg"  [ngClass]="['head-sidebar']">
+
+      <div class="" >
+        <button (click)="closeSidebar()" class="btn btn-outline-danger"><i class="bi bi-x-lg"></i></button>
+      </div>
+
+      <div class="card shadow w-100 py-3 d-flex align-items-center" [ngClass]="['nav-ul']">
+        <ul class="list-unstyled fw-bold d-flex flex-column gap-4 " >
+            <li class=""><a class="text-decoration-none" routerLink="/home" [routerLinkActive]="'active-link'" [ngClass]="'nav-link'">Home</a></li>
+            <li class=""><a class="text-decoration-none" routerLink="/content" [routerLinkActive]="'active-link'" [ngClass]="'nav-link'">Content</a></li>
+            <li class=""><a class="text-decoration-none" routerLink="/page" [routerLinkActive]="'active-link'" [ngClass]="'nav-link'">Pages</a></li>
+            <li class=""><a class="text-decoration-none" routerLink="/contact" [routerLinkActive]="'active-link'" [ngClass]="'nav-link'">Contact</a></li>
+
+        </ul>
+      </div>
+
+      <div class="d-flex gap-3">
+        <button class="btn btn-outline-success fw-bolder">Sign-in</button>
+        <button class="btn btn-success fw-bolder">Login</button>
+      </div>
+
+
+    </div>
+
+    <div (click)="closeSidebar()" class="d-none d-sm-flex bg-dark opacity-50 w-100 ">
+      <p class="d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sed a jdnjnd dnddn djndknd  minus sunt obcaecati, fugit iure totam beatae error odit. Sapiente voluptatibus laborum consequuntur atque ratione!</p>
+    </div>
+</nav>
+
+
+
+<header class="container-fluid " [ngClass]="['head']">
+    <div class="container-fluid  {{isMenuScroll?'shadow-lg bg-light fixed-top':''}}" >
+      <div class="container d-flex justify-content-around pt-3">
+        <ul class="list-unstyled ">
+          <li class=""><a href="" class="text-decoration-none text-dark fw-bold">Exside<span class="text-success">Tech</span></a></li>
+        </ul>
+
+        <div class="">
+          <button (click)="openSidebar()" class="d-block d-lg-none btn btn-outline-dark py-1 "><i class="bi bi-list"></i></button>
+        </div>
+  
+        <ul class="list-unstyled d-none d-lg-flex gap-4 fw-bold" >
+          <li class=""><a class="text-decoration-none" routerLink="/home" [routerLinkActive]="'active-link'" [ngClass]="'nav-link'" >Home</a></li>
+          <li class=""><a class="text-decoration-none" routerLink="/content" [routerLinkActive]="'active-link'" [ngClass]="'nav-link'"  >Content</a></li>
+          <li class=""><a class="text-decoration-none" routerLink="/page" [routerLinkActive]="'active-link'" [ngClass]="'nav-link'"  >Pages</a></li>
+          <li class=""><a class="text-decoration-none" routerLink="/contact" [routerLinkActive]="'active-link'" [ngClass]="'nav-link'" >Contact</a></li>
+
+        </ul>
+  
+        <ul class="list-unstyled d-none d-lg-flex gap-3" >
+          <button class="btn btn-outline-success fw-bolder" routerLink="/home/form">Sign-in</button>
+          <button class="btn btn-success fw-bolder" routerLink="/home">Login</button>
+  
+        </ul>
+  
+      </div>
+    </div>
+  </header>
+
+
+

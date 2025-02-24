@@ -1,0 +1,29 @@
+.active-link{
+    color: green;
+    border-bottom: 3px solid green;   
+}
+
+.nav-ul{
+    background-color: rgb(239, 220, 195);
+
+}
+
+
+.nav-link:hover{
+    color: green;
+    border-bottom: 3px solid green;
+    transition: 0.2s;
+}
+
+
+.head{
+    background-color: rgba(222, 184, 135, 0.429);
+}
+.head-sidebar{
+    background-color: rgb(222, 184, 135);
+
+    transition: 0.5s;
+}
+
+
+

@@ -1,0 +1,23 @@
+<div class="container d-flex justify-content-center">
+    <div class="card p-3 w-75 ">
+        <h5 class="my-3 text-center">User <span class="text-success"> Login</span></h5> 
+        <form action="" [formGroup]="userLogin" (ngSubmit)="onSubmit()">
+            <div class="mb-3" >
+                <label for="" class="form-label" >Email :</label>
+                <input type="email" formControlName="email"  placeholder="xyz@gmail.com" class="form-control ">
+
+                <span *ngIf="!userLogin.get('email').valid && userLogin.get('email').touched" class="text-danger small">Name is required !</span>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label ">Password :</label>
+                <input type="password" formControlName="password" class="form-control">
+
+                <span *ngIf="!userLogin.get('password').valid && userLogin.get('password').touched" class="text-danger small">Password is required !</span>
+            </div>
+            <div class="">
+                <p class="small">are you new user ? <a class="text-decoration-none" href="" routerLink="/home/form" >register</a></p>
+                <button  class="btn btn-success " [disabled]="!userLogin.valid" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.page-style{
+    background-color: rgba(222, 184, 135, 0.429);
+
+}
+
+.page-card{
+    background-color: rgba(0, 128, 0, 0.156)
+
+}
+.page-card:hover{
+    background-color: rgba(0, 128, 0, 0.69);
+
+}
+
+.card-border{
+    border-color: none;
+}
+
+.card-border:hover{
+    border-color: green;
+    background-color: rgba(0, 128, 0, 0.110);
+    transition: 0.5s;
+}

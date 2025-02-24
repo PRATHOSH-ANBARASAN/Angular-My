@@ -1,0 +1,35 @@
+<div [ngClass]="'home-style'" >
+
+    <div class="d-flex w-100 justify-content-center">
+        <div *ngIf="showMessage" [ngClass]="['popup']" class="card shadow w-50 text-center">
+            <p class="fw-semibold">Welcome,<span class="text-success "> ExsideTech</span> Website..!</p>
+        </div>
+    </div>
+
+    <div class="d-flex container justify-content-around " >
+        <div class="d-flex flex-column flex-md-row">
+            <div class="d-flex pt-5 ">
+                <div class="d-flex flex-column justify-content-around">
+                    <p class="text-success fw-bold">Start Your Good Place with Work... </p>
+                    <h4 class="fw-bolder">Now learning from any where,and build<br> your<span class="text-success"> bright career.</span></h4>
+                    <p class=" small">Accusantium aut assumenda quae, nostrum modi eum <br> magnam dignissimos ea hic facere quis ....!</p>
+                    <p class=""><button (click)="showPopup()" type="button" class="btn btn-success " >Start work's</button></p>
+
+                    
+                </div>
+            </div>
+            <div class="col ">
+                <img src="images/home_image.png" alt="" class="w-100 h-100">
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="py-5">
+        <app-login></app-login>
+    </div>    
+
+
+    
+</div>
